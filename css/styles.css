@@ -401,6 +401,7 @@ header .container .navigation a:hover p {
   align-items: center;
   background-color: #3f455dc4;
   background-image: url("../images/main page bg 1.png");
+  background-repeat: no-repeat;
   background-size: 100% 100%;
 }
 .intro .container .caption {
@@ -538,7 +539,8 @@ header .container .navigation a:hover p {
   height: 100%;
   background-image: url("../images/Video Chapter 1.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
+  border-radius: 5px;
 }
 .intro .container .content .video-container .video iframe {
   width: 100%;
@@ -701,7 +703,7 @@ header .container .navigation a:hover p {
   cursor: pointer;
 }
 .about .chapters ul li .content .round-button:hover i {
-  font-size: 30px;
+  font-size: 25px;
 }
 .about .chapters ul li .content img {
   width: 270px;

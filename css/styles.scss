@@ -454,6 +454,7 @@ header {
         align-items: center;
         background-color: #3f455dc4;
         background-image: url("../images/main\ page\ bg\ 1.png");
+        background-repeat: no-repeat;
         background-size: 100% 100%;
             .caption{
                 font-size: 42px;
@@ -590,7 +591,8 @@ header {
                         height: 100%;
                         background-image: url("../images/Video\ Chapter\ 1.png");
                         background-repeat: no-repeat;
-                        background-size: cover;
+                        background-size: 100% 100%;
+                        border-radius: 5px;
                     }
                     iframe{
                         width: 100%;
@@ -756,7 +758,7 @@ header {
                             height: 90px;
                             cursor: pointer;
                             i {
-                                font-size: 30px;
+                                font-size: 25px;
                             }
                         }
                     }
