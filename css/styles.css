@@ -1,0 +1,1079 @@
+@font-face {
+  font-family: "Cerebri Sans Pro";
+  src: url("../fonts/CerebriSansPro-Regular.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Cerebri Sans Pro";
+  src: url("../fonts/CerebriSansPro-Bold.ttf");
+  font-style: normal;
+  font-weight: bold;
+}
+body, section {
+  padding: 0;
+  margin: 0;
+  font-family: Cerebri Sans Pro;
+}
+
+header .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+header .fa {
+  display: none;
+}
+
+.menu-icon {
+  position: absolute;
+  top: 70px;
+  right: 100px;
+  display: none;
+}
+
+.menu-icon:hover {
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+.menu-container {
+  width: 495px;
+  flex-direction: column;
+  align-items: flex-start;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #3D445C;
+  z-index: 1;
+}
+.menu-container .menu-container-header {
+  width: 100%;
+  height: 129px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu-container .menu-container-header img {
+  margin-left: 30px;
+}
+.menu-container .menu-container-header .hide {
+  margin-right: 30px;
+}
+.menu-container .menu-container-header .hide:hover {
+  cursor: pointer;
+}
+.menu-container .menu-links {
+  width: 495px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.menu-container .menu-links a {
+  display: flex;
+  align-items: center;
+  width: 311px;
+  font-family: Cerebri Sans Pro;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 26px;
+  color: #FFFFFF;
+  border-bottom: 0.5px solid #97A1C1;
+  text-decoration: none;
+  margin-left: 30px;
+}
+.menu-container .menu-links a:last-child {
+  margin-bottom: 70px;
+  border: none;
+}
+.menu-container .menu-links .after-details {
+  border-top: 0.5px solid #97A1C1;
+}
+.menu-container .menu-links details {
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 311px;
+  margin-left: 30px;
+}
+.menu-container .menu-links details a {
+  margin: 20px 0 20px 0;
+  line-height: 26px;
+  border: none;
+  color: #bdc1d1;
+  transition: color 0.2s linear;
+}
+.menu-container .menu-links details a:hover {
+  color: white;
+}
+.menu-container .menu-links details a:nth-child(2) {
+  margin-top: 10px;
+}
+.menu-container .menu-links details a:last-child {
+  line-height: 26px;
+  margin-bottom: 10px;
+}
+.menu-container .menu-links details[open] {
+  max-height: auto;
+}
+.menu-container .menu-links details[open] summary div i {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+.menu-container .menu-links details[open] summary {
+  border-bottom: 0.5px solid #97A1C1;
+}
+.menu-container .menu-links summary:focus {
+  outline: none;
+}
+.menu-container .menu-links summary::-webkit-details-marker {
+  display: none;
+}
+.menu-container .menu-links summary {
+  width: 100%;
+  height: 56.4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Cerebri Sans Pro";
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 26px;
+  color: white;
+}
+.menu-container .menu-links summary .details-link {
+  width: auto;
+  color: white;
+}
+.menu-container .menu-links summary .details-link:hover {
+  color: #bdc1d1;
+}
+.menu-container .menu-links summary div {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(151, 161, 193, 0.3);
+  transition-property: background-color;
+  transition-duration: 0.2s;
+}
+.menu-container .menu-links summary div:hover {
+  background-color: rgba(204, 209, 223, 0.3);
+}
+.menu-container .menu-links summary i {
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+.menu-container .menu-links summary .arrow {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transition: transform 0.3s ease-in-out;
+}
+.menu-container .menu-links summary:hover div {
+  background-color: rgba(204, 209, 223, 0.3);
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  height: 160px;
+}
+header .container {
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+header .container img {
+  margin-left: 20px;
+}
+header .container .navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+}
+header .container .navigation .select {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+header .container .navigation .select p {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  font-family: "Cerebri Sans Pro";
+  color: #3F455D;
+  font-size: 20px;
+  height: 100%;
+  transition-property: color;
+  transition-duration: 0.3s;
+}
+header .container .navigation .select p .header-arrow {
+  border: solid #3F455D;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  margin-left: 10px;
+  margin-bottom: 5px;
+  padding: 3px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transition-property: border;
+  transition-duration: 0.3s;
+}
+header .container .navigation .select a {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  font-family: "Cerebri Sans Pro";
+  color: #3F455D;
+  font-size: 20px;
+  height: 100%;
+  text-decoration: none;
+  transition-property: color;
+  transition-duration: 0.3s;
+}
+header .container .navigation .select a .header-arrow {
+  border: solid #3F455D;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  margin-left: 10px;
+  margin-bottom: 5px;
+  padding: 3px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transition-property: border;
+  transition-duration: 0.3s;
+}
+header .container .navigation .select .on-hover {
+  display: flex;
+  bottom: 0;
+  width: 0;
+  height: 3px;
+  transition-property: width;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+  background-color: #FFD639;
+  align-self: flex-start;
+  margin: 0;
+  z-index: 10;
+}
+header .container .navigation .select:hover {
+  cursor: pointer;
+}
+header .container .navigation .select:hover .broker-links {
+  display: flex;
+}
+header .container .navigation .select:hover .on-hover {
+  width: 100%;
+}
+header .container .navigation .select:hover p {
+  color: #FFD639;
+}
+header .container .navigation .select:hover a:hover {
+  color: #FFD639;
+}
+header .container .navigation .select:hover .header-arrow {
+  border: solid #FFD639;
+  border-width: 0 3px 3px 0;
+}
+header .container .navigation .events:hover .event-links {
+  display: flex;
+}
+header .container .navigation .hidden-links {
+  position: absolute;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: white;
+  border-bottom: 3px solid #FFD639;
+  z-index: 10;
+}
+header .container .navigation .hidden-links a {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-decoration: none;
+  font-family: "Cerebri Sans Pro";
+  font-size: 15px;
+  color: #cacaca;
+  margin: 10px 0 10px 30px;
+  height: initial;
+  transition: color 0.2s linear;
+}
+header .container .navigation .hidden-links a:hover {
+  color: #FFD639;
+}
+header .container .navigation .hidden-links a:first-child {
+  margin-top: 20px;
+}
+header .container .navigation .hidden-links a:after {
+  display: flex;
+  width: 0;
+  height: 1px;
+  background-color: #FFD639;
+  content: "";
+  transition: width 0.3s ease-out;
+}
+header .container .navigation .hidden-links a:hover:after,
+header .container .navigation .hidden-links a:focus:after {
+  width: 100%;
+}
+header .container .navigation .broker-links {
+  top: 130px;
+  right: 473px;
+  display: none;
+}
+header .container .navigation .event-links {
+  top: 130px;
+  right: 270px;
+  display: none;
+}
+header .container .navigation a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  max-height: 100px;
+  margin: 0 10px 0 10px;
+  padding: 0 5px 0 5px;
+  font-family: "Cerebri Sans Pro";
+  text-decoration: none;
+}
+header .container .navigation a p {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 400;
+  margin: 0;
+  color: #3F455D;
+  transition-property: color;
+  transition-duration: 0.3s;
+}
+header .container .navigation a .on-hover {
+  display: flex;
+  bottom: 0;
+  width: 0;
+  height: 3px;
+  transition-property: width;
+  transition-duration: 0.4s;
+  transition-timing-function: ease-in-out;
+  background-color: #FFD639;
+  align-self: flex-start;
+  margin: 0;
+  z-index: 20;
+}
+header .container .navigation a:hover .on-hover {
+  width: 100%;
+}
+header .container .navigation a:hover p {
+  color: #FFD639;
+}
+
+.yellow-text {
+  color: #fed639;
+  margin-top: 0;
+}
+
+.intro .container {
+  display: flex;
+  flex-direction: column;
+  height: 810px;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #3f455dc4;
+  background-image: url("../images/main page bg 1.png");
+  background-size: 100% 100%;
+}
+.intro .container .caption {
+  font-size: 42px;
+  font-weight: 700;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+.intro .container .content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+}
+.intro .container .content .form {
+  width: 370px;
+  height: 547px;
+  background-color: white;
+  margin-left: 40px;
+  border-radius: 10px;
+  background-color: #3e445c;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.intro .container .content .form .form-caption {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 317px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin-bottom: 30px;
+  margin-top: 25px;
+}
+.intro .container .content .form .form-caption h3, .intro .container .content .form .form-caption p {
+  font-family: Cerebri Sans Pro;
+  font-size: 15px;
+  line-height: 30px;
+  text-align: center;
+  color: #FFFFFF;
+  margin: 0;
+}
+.intro .container .content .form form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.intro .container .content .form form input[type=text], .intro .container .content .form form input[type=password] {
+  width: 280px;
+  height: 49px;
+  margin: 5px;
+  border-radius: 10px;
+  border: none;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.intro .container .content .form form input[type=submit] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 320px;
+  height: 56px;
+  border-radius: 10px;
+  margin-top: 15px;
+  border: none;
+  background-color: #fed639;
+  color: #3e445c;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  transition-property: background-color;
+  transition-delay: 0.2s;
+  transition-duration: 0.2s;
+}
+.intro .container .content .form form input[type=submit]:hover {
+  background-color: #ac8f1c;
+  cursor: pointer;
+}
+.intro .container .content .form form .checkboxes {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 320px;
+  align-self: flex-start;
+}
+.intro .container .content .form form .checkboxes label {
+  margin: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+.intro .container .content .form form .checkboxes label span {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 15px;
+  color: #B7B7B7;
+  width: 303px;
+}
+.intro .container .content .form form .checkboxes label span a {
+  color: #fed639;
+  text-decoration: none;
+}
+.intro .container .content .form form .checkboxes label span a:hover {
+  cursor: pointer;
+}
+.intro .container .content .video-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.intro .container .content .video-container p {
+  font-family: Cerebri Sans Pro;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  color: white;
+}
+.intro .container .content .video-container .video {
+  width: 770px;
+  height: 466px;
+  background-color: #3e445c;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.intro .container .content .video-container .video .image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/Video Chapter 1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.intro .container .content .video-container .video iframe {
+  width: 100%;
+  height: 100%;
+}
+.intro .container .content .video-container .video .round-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  text-decoration: none;
+  font-size: 35px;
+  border-radius: 100px;
+  background-color: white;
+  z-index: 2;
+  transition: width 0.3s ease-out, height 0.3s ease-out;
+}
+.intro .container .content .video-container .video .round-button:hover {
+  width: 90px;
+  height: 90px;
+}
+.intro .container .content .video-container .video .round-button:hover p {
+  font-size: 30px;
+}
+.intro .container .content .video-container .video .round-button p {
+  color: #FFD639;
+  margin-left: 5px;
+  transition: font-size 0.3s ease-out;
+}
+.intro .container .content .video-container .video img {
+  margin-top: -40px;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.about .about-caption {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.about .about-caption h1 {
+  font-size: 30px;
+  font-family: Cerebri Sans Pro;
+  color: #3F455D;
+}
+.about .about-caption h3 {
+  font-family: Cerebri Sans Pro;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  color: #3F455D;
+  margin-top: 0;
+}
+.about .about-caption p {
+  text-align: center;
+  font-size: 16px;
+  font-family: Cerebri Sans Pro;
+  color: #757575;
+  font-weight: 200;
+  margin-top: -10px;
+}
+.about .about-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.about .about-top .top-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about .about-top .top-row img {
+  margin-right: 30px;
+}
+.about .about-top .top-row .description {
+  max-width: 970px;
+  font-size: 15px;
+  line-height: 174%;
+  color: #696969;
+}
+.about .about-top .bottom-line {
+  width: 570px;
+  border-width: 0.25px;
+  color: #696969;
+  margin: 50px 0 50px 0;
+}
+.about .chapters {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.about .chapters .caption {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 179%;
+  text-align: center;
+  color: #696969;
+  margin-bottom: 10px;
+}
+.about .chapters ul {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0;
+}
+.about .chapters ul li {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 270px;
+  height: 561px;
+  border-radius: 10px;
+  background-color: rgba(178, 190, 207, 0.24);
+  margin-right: 30px;
+  box-shadow: 1px 1px 5px 1px #e0e0e0;
+}
+.about .chapters ul li .content {
+  width: 270px;
+  height: 270px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about .chapters ul li .content .round-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  text-decoration: none;
+  border-radius: 100px;
+  background-color: white;
+  z-index: 2;
+  transition: width 0.3s ease-out, height 0.3s ease-out;
+}
+.about .chapters ul li .content .round-button i {
+  font-size: 20px;
+  margin-left: 5px;
+  color: #494949;
+  transition: font-size 0.3s ease-out;
+}
+.about .chapters ul li .content .round-button:hover {
+  width: 90px;
+  height: 90px;
+  cursor: pointer;
+}
+.about .chapters ul li .content .round-button:hover i {
+  font-size: 30px;
+}
+.about .chapters ul li .content img {
+  width: 270px;
+  height: 270px;
+  border-radius: 10px;
+  margin-top: -40px;
+}
+.about .chapters ul li .chapter-header {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  color: #696969;
+  margin-bottom: 5px;
+  margin-left: 20px;
+}
+.about .chapters ul li .chapter-subheader {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  color: #4b4b4b;
+  margin-top: 0;
+  margin-left: 20px;
+}
+.about .chapters ul li .description {
+  margin-left: 20px;
+  font-size: 15px;
+  line-height: 179%;
+  color: #696969;
+}
+.about .chapters ul li .description span {
+  font-weight: 600;
+}
+.about .chapters ul li:nth-child(1) {
+  background-color: #3D445C;
+}
+.about .chapters ul li:nth-child(1) .content {
+  background-image: url("../images/Thumbnail Chapter 1.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.about .chapters ul li:nth-child(1) .content .round-button i {
+  color: #fed639;
+}
+.about .chapters ul li:nth-child(1) .chapter-header {
+  color: white;
+}
+.about .chapters ul li:nth-child(1) .chapter-subheader {
+  color: #fed639;
+}
+.about .chapters ul li:nth-child(1) .description {
+  color: white;
+}
+.about .chapters ul li:nth-child(2) .content {
+  background-image: url("../images/Thumbnail Chapter 2.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.about .chapters ul li:nth-child(3) .content {
+  background-image: url("../images/Thumbnail Chapter 3.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.about a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 416px;
+  height: 63px;
+  border-radius: 10px;
+  background-color: #fed639;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+  color: #414040;
+  text-decoration: none;
+  transition-property: background-color, color;
+  transition-delay: 0.2s;
+  transition-duration: 0.2s;
+  margin: 50px 0 80px 0;
+}
+.about a:hover {
+  background-color: #3e445c;
+  color: white;
+}
+
+.partners {
+  height: 503px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: rgba(178, 190, 207, 0.24);
+}
+.partners .partners-caption h1 {
+  font-size: 30px;
+  font-weight: 700;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  color: #3F455D;
+}
+.partners .partners-list {
+  display: flex;
+  justify-content: space-between;
+  height: 289px;
+}
+.partners .partners-list li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 370px;
+  height: 167px;
+  border-radius: 10px;
+  background-color: white;
+  margin-right: 30px;
+  box-shadow: 1px 1px 5px 1px #e0e0e0;
+  transition: box-shadow 0.3s linear;
+}
+.partners .partners-list li .caption {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 100px;
+}
+.partners .partners-list li:hover {
+  box-shadow: 1px 1px 15px 1px #aaaaaa;
+  cursor: pointer;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .container h3 {
+  font-family: Cerebri Sans Pro;
+  font-size: 20px;
+  font-weight: 550;
+  text-align: left;
+  color: #3F455D;
+  margin-top: 0;
+}
+footer .container .footer-top {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 150px;
+}
+footer .container .footer-top div {
+  margin-right: 100px;
+}
+footer .container .footer-top .footer-links, footer .container .footer-top .footer-policies {
+  width: 135px;
+}
+footer .container .footer-top .adress {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-family: Cerebri Sans Pro;
+  font-size: 15px;
+  text-align: left;
+  color: #696969;
+}
+footer .container .footer-top .adress .full-adress {
+  width: 329px;
+}
+footer .container .footer-top .adress a {
+  display: inline-block;
+  font-family: Cerebri Sans Pro;
+  font-size: 15px;
+  text-align: left;
+  color: #696969;
+  text-decoration: none;
+  width: auto;
+}
+footer .container .footer-top .adress a:after {
+  display: flex;
+  width: 0;
+  height: 1px;
+  background-color: #696969;
+  content: "";
+  transition: width 0.3s ease-out;
+}
+footer .container .footer-top .adress a:hover:after,
+footer .container .footer-top .adress a:focus:after {
+  width: 100%;
+}
+footer .container .footer-top .adress img {
+  margin-bottom: 20px;
+}
+footer .container .footer-top .adress .traders-expert {
+  display: inline-block;
+  width: auto;
+  color: #ffe818;
+  margin-top: 20px;
+  text-decoration: none;
+  transition-property: color;
+  transition-duration: 0.2s;
+}
+footer .container .footer-top .adress .traders-expert:hover {
+  color: #696969;
+}
+footer .container .footer-top .adress .traders-expert:after {
+  display: flex;
+  width: 0;
+  height: 0.5px;
+  background-color: #696969;
+  content: "";
+  transition: width 0.3s ease-out;
+}
+footer .container .footer-top .adress .traders-expert:hover:after,
+footer .container .footer-top .adress .traders-expert:focus:after {
+  width: 100%;
+}
+footer .container .footer-top .footer-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+footer .container .footer-top .footer-links a {
+  font-family: Cerebri Sans Pro;
+  font-size: 15px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 33px;
+  color: #696969;
+  text-decoration: none;
+  transition-property: color;
+  transition-duration: 0.3s;
+}
+footer .container .footer-top .footer-links a:nth-child(2) {
+  margin-top: 15px;
+}
+footer .container .footer-top .footer-links a:hover {
+  color: #FFD639;
+}
+footer .container .footer-top .footer-links a:after {
+  display: flex;
+  width: 0;
+  height: 2px;
+  background-color: #FFD639;
+  content: "";
+  transition: width 0.3s ease-out;
+}
+footer .container .footer-top .footer-links a:hover:after,
+footer .container .footer-top .footer-links a:focus:after {
+  width: 100%;
+}
+footer .container .footer-top .footer-policies {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-items: flex-start;
+}
+footer .container .footer-top .footer-policies a {
+  font-family: Cerebri Sans Pro;
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 33px;
+  text-align: center;
+  color: #3F455D;
+  text-decoration: none;
+  transition-property: color;
+  transition-duration: 0.3s;
+}
+footer .container .footer-top .footer-policies a:nth-child(2) {
+  margin-top: 15px;
+}
+footer .container .footer-top .footer-policies a:hover {
+  color: #FFD639;
+}
+footer .container .footer-top .footer-policies a:after {
+  display: flex;
+  width: 0;
+  height: 2px;
+  background-color: #FFD639;
+  content: "";
+  transition: width 0.3s ease-out;
+}
+footer .container .footer-top .footer-policies a:hover:after,
+footer .container .footer-top .footer-policies a:focus:after {
+  width: 100%;
+}
+footer .container .footer-top .newsletter form {
+  display: flex;
+  flex-direction: column;
+}
+footer .container .footer-top .newsletter form input {
+  width: 277px;
+  height: 55px;
+  font-family: "Cerebri Sans Pro";
+  font-size: 15px;
+  border: none;
+  margin: 10px 10px 10px 0;
+  background-color: #F5F5F5;
+  border-radius: 5px;
+  padding: 0 10px 0 10px;
+}
+footer .container .footer-top .newsletter form input[type=submit] {
+  width: 175px;
+  height: 55px;
+  min-width: 175px;
+  background-color: #FFD639;
+  color: #3F455D;
+  font-weight: 600;
+  font-size: 15px;
+  transition-property: color, background-color, margin-top;
+  transition-duration: 0.3s;
+  margin-top: 50px;
+}
+footer .container .footer-top .newsletter form input[type=submit]:hover {
+  background-color: #3F455D;
+  color: white;
+  margin-top: 47px;
+  cursor: pointer;
+}
+footer .container .footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 50px;
+}
+footer .container .footer-bottom .rights p {
+  font-family: Cerebri Sans Pro;
+  font-size: 15px;
+  font-weight: 500;
+  color: #696969;
+}
+footer .container .footer-bottom .app-links {
+  display: flex;
+  justify-content: space-between;
+}
+footer .container .footer-bottom .app-links .app-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  border: 1px solid #bbbbbb;
+  border-radius: 100px;
+  margin-right: 20px;
+  transition-property: background-color;
+  transition-duration: 0.2s;
+}
+footer .container .footer-bottom .app-links .app-logo a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 100px;
+  text-decoration: none;
+}
+footer .container .footer-bottom .app-links .app-logo i {
+  color: #646464;
+  transition-property: color;
+  transition-duration: 0.2s;
+}
+footer .container .footer-bottom .app-links .app-logo:hover {
+  background-color: #FFD639;
+  color: white;
+  border: 1px solid #FFD639;
+}
+footer .container .footer-bottom .app-links .app-logo:hover i {
+  color: white;
+}
+
+/*# sourceMappingURL=styles.css.map */

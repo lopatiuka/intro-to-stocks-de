@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Traders expert</title>
+    <link  rel = "stylesheet" type = "text/css" href = "css/styles.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="https://kit.fontawesome.com/5cee7e9296.js" crossorigin="anonymous"></script>
+    <!-- BEGIN intgrtn -->
+    <script type="text/javascript">
+        (function (d) {
+            if (window.intgrtn) {
+                return;
+            }
+            var s = d.createElement("script");
+            var date = new Date();
+            s.src = "//mistertrack.click/api/v1/integration/sdk.js?v=" + date.getFullYear().toString() + date.getMonth().toString() + date.getDay().toString() + date.getHours().toString();
+            d.getElementsByTagName("head")[0].appendChild(s);
+        })(document);
+    </script>
+    <!-- END intgrtn -->
+</head>
+<body>
+    <header>
+        <div class = "container">
+            <a href = "#"><img src = "images/logo header.png"></a>
+            <nav class = "navigation">
+                <a href = "https://traders.expert/" target="_blank"><p>Home</p><div class = "on-hover"></div></a>
+                <a href = "https://traders.expert/about-us/" target="_blank"><p>About Us</p><div class = "on-hover"></div></a>
+                <div class = "select"><p>Broker <i class = "header-arrow"></i></p><div class = "on-hover"></div> 
+                    <div class = "hidden-links broker-links">
+                        <a href = "https://traders.expert/broker-listing/" target="_blank">Broker Listing</a>
+                        <a href = "https://traders.expert/brokers-review/" target="_blank">Brokers Review</a>
+                        <a href = "https://traders.expert/brokers-review/broker-review/" target="_blank">Broker Review Directory</a>
+                    </div> 
+                </div>
+                <a href = "https://traders.expert/education-page/" target="_blank"><p>Education</p><div class = "on-hover"></div></a>
+                <div class = "select events"><a href = "https://traders.expert/events/" target="_blank">Events <i class = "header-arrow"></i></a><div class = "on-hover"></div> 
+                    <div class = "hidden-links event-links">
+                        <a href = "https://traders.expert/events/dedicated-page/" target="_blank">Event - Dedicated Page</a>
+                    </div> 
+                </div>                    
+                <a href = "https://traders.expert/others-products/" target="_blank"><p>Others Products</p><div class = "on-hover"></div></a>
+                <a href = "https://traders.expert/news/" target="_blank"><p>News</p><div class = "on-hover"></div></a>
+                <a href = "https://traders.expert/contact-us/" target="_blank"><p>Contact Us</p><div class = "on-hover"></div></a>
+            </nav>
+            <div id = "menu" class = "menu-container hidden">
+                <div class = "menu-container-header">
+                    <img src = "images/logo header.png">
+                    <p id = "hide-menu" class = "hide">&#10006;</p>
+                </div>
+                <div class = "menu-links">
+                    <a href = "https://traders.expert/" target="_blank"><p>Home</p></a>
+                    <a href = "https://traders.expert/about-us/" target="_blank"><p>About Us</p></a>
+                    <details>
+                        <summary>Broker <div><i class = "arrow"></i></div></summary>
+                        <a href = "https://traders.expert/broker-listing/" target="_blank">Broker Listing</a>
+                        <a href = "https://traders.expert/brokers-review/" target="_blank">Brokers Review</a>
+                        <a href = "https://traders.expert/brokers-review/broker-review/" target="_blank">Broker Review Directory</a>
+                    </details>
+                    <a class = "after-details" href = "https://traders.expert/education-page/" target="_blank"><p>Education</p></a>
+                    <details>
+                        <summary><a class = "details-link" href = "https://traders.expert/events/" target="_blank">Events</a><div><i class = "arrow"></i></div></summary>
+                        <a href = "https://traders.expert/events/dedicated-page/" target="_blank">Event - Dedicated Page</a>
+                    </details>
+                    <a class = "after-details" href = "https://traders.expert/others-products/" target="_blank"><p>Others Products</p></a>
+                    <a href = "https://traders.expert/news/" target="_blank"><p>News</p></a>
+                    <a href = "https://traders.expert/contact-us/" target="_blank"><p>Contact Us</p></a>
+                </div>
+            </div>
+        </div>
+        <i id = "show-menu" class="fa fa-bars menu-icon"></i>
+    </header>
+    <section class = "intro">
+        <div class = "container">
+                <h1 class = "caption">Get FREE Access to Traders Expert's online course:</br>
+                    <span class = "yellow-text">“Learn to Trade Stocks”</span>, Webinar Series!
+                </h1>
+            <div class = "content">
+                <div class = "video-container">
+                    <p>Video serie CHAPTER #1</br>
+                        <span class = "yellow-text">Intro to Stocks</span></p>
+                    <div class = "video">
+                        <div class = "image">
+                            <a data-fancybox href="https://www.youtube.com/watch?v=ifp5L0mB0Aw"  class = "round-button"><p>&#9658</p></a>
+                        </div>
+                    </div>
+                </div>
+                <div class = "form">
+                    <div class = "form-caption">
+                            <h3>Receive 2 additional videos & Ebook</h3>
+                            <p>by simply joining our community and opening an account with our recommended broker.</p>
+                    </div>
+                    <form>
+                        <input type = "text" name = "email" placeholder="Email">
+                        <input type = "text" name = "name" placeholder="Name">
+                        <div class = "checkboxes">
+                            <label>
+                                <input type = "checkbox"><span>
+                                    By checking this box you agree to subscribe to Traders Expert & it’s affiliates brand 
+                                    assets newsletter
+                                </span>
+                            </label>
+                            <label>
+                                <input type = "checkbox"><span>
+                                    By checking this box you agree to our  <a href="https://traders.expert/terms-conditions/" target="_blank">Terms</a>,
+                                    <a href="https://traders.expert/privacy-policy/" target="_blank">Privacy</a> &amp; 
+                                    <a href="https://traders.expert/spam-disclaimer/" target="_blank">Spam Disclaimer</a>
+                                </span>
+                            </label>
+                            <label>
+                                <input type = "checkbox"><span>
+                                    By checking this box you agree to our
+                                    <a href="https://traders.expert/privacy-policy/" target="_blank">GDPR</a> terms
+                                </span>
+                            </label>
+                        </div>
+                        <input type = "submit" value = "Join Community">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class = "about-section">
+        <div class = "about">
+            <div class = "about-caption">
+                <h1>Learn to <span class = "yellow-text">Trade Stocks</span>, Webinar Serie Full Access</h1>
+                <h3>Meet Adam Peter Harris</h3>
+                <p>A Profeccional Trading Mentor Who Created the Webinar</p>
+            </div>
+            <div class = "about-top">
+                <div class = "top-row">
+                    <img src="images/img Adam.png">
+                    <p class = "description">As trading regulated funds only occupies a small portion of Adam’s daily life, 
+                        he also provides technical analysis content through Trade With Precision for a select few institutions globally, 
+                        such as the Futures Institute division of the Chicago Mercantile Exchange (C.M.E.), the Intercontinental Exchange 
+                        (I.C.E.),  and mentors a limited number of individuals each year. Adam looks forward to bringing his real-world 
+                        trading experience, technical analysis expertise and unique mentoring techniques to an exclusive client base.
+                    </p>
+                </div>
+                <hr noshade class = "bottom-line"/>
+            </div>
+                <div class = "chapters">
+                    <p class = "caption">Complete the full series learning "How to trade stocks & shares". 
+                        Below displayed the next videos and Ebook which you can have access to for FREE.
+                    </p>
+                    <ul>
+                        <li>
+                            <div class = "content">
+                                <a class = "round-button"><i class="fas fa-play"></i></a>
+                            </div>
+                            <h3 class = "chapter-header">CHAPTER #1</h3>
+                            <h3 class = "chapter-subheader">Intro to Stocks</h3>
+                            <p class = "description">
+                                Our first video in a 3 chapter webinar series in collaboration with
+                            </p>
+                        </li>
+                        <li>
+                            <div class = "content">
+                                <a class = "round-button"><i class="fas fa-play"></i></a>
+                            </div>
+                            <h3 class = "chapter-header">CHAPTER #2</h3>
+                            <h3 class = "chapter-subheader">How to Choose Your Stocks</h3>
+                            <p class = "description">
+                                One of the most important decision while trading stocks is... Which stock should I choose & how.
+                            </p>
+                        </li>
+                        <li>
+                            <div class = "content">
+                                <a class = "round-button"><i class="fas fa-play"></i></a>
+                            </div>
+                            <h3 class = "chapter-header">CHAPTER #3</h3>
+                            <h3 class = "chapter-subheader">How to Trade Stocks</h3>
+                            <p class = "description">
+                                Watch the last chapter of this series, explaining how to actually trade stocks.
+                            </p>
+                        </li>
+                        <li>
+                            <div class = "content">
+                                <img src="images/Thumbnail Ebook.png" style = "margin-top: 0">
+                            </div>
+                            <h3 class = "chapter-header">EBOOK</h3>
+                            <h3 class = "chapter-subheader">Trading stocks and wealth</h3>
+                            <p class = "description">
+                                To top off this video series, we've included an ebook with full cover of how to trade stocks with additional 
+                                chapters which are not presented in this video series.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <a href = "#">Get Full Access </a>
+        </div>
+    </section>
+
+    <section class = "partners-section">
+        <div class = "partners">
+            <div class = "partners-caption">
+                <h1>
+                    Visit our sites & <span class = "yellow-text">Partners</span>
+                </h1>
+            </div>
+            <div class = "partners-container">
+                <ul class = "partners-list">
+                    <li>
+                        <a href = "https://traders.expert/" target="_blank" class = "caption">
+                            <img src="images/logo.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href = "https://tradingacademy.expert/" target="_blank" class = "caption">
+                            <img src="images/Traders Academy Expert logo.png">
+                        </a>
+                    </li><li>
+                        <a href = "https://paintingthetape.com/" target="_blank" class = "caption">
+                            <img src="images/Painting the tape logo.png">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class = "container">
+            <div class = "footer-top">
+                <div class = "adress">
+                    <img src = "images/logo footer.png">
+                    <p class = "full-adress">Bik A, 15/F Hillier Comm. Bldg., 65-67 Bonham</br>
+                        Strand East, Sheung Wan, Hong Kong
+                    </p>
+                    <a href = "#">Community@Traders.Expert</a>
+                    <a href = "https://traders.expert/" target="_blank" class = "traders-expert">Trader.Expert</a>
+                </div>
+                <div class = "footer-links">
+                    <h3>Quick Links</h3>
+                    <a href = "https://traders.expert/about-us/">About Us</a>
+                    <a href = "https://traders.expert/broker-listing/">Broker Listing</a>
+                    <a href = "https://traders.expert/brokers-review/">Broker Review</a>
+                    <a href = "https://traders.expert/education-page/">Education</a>
+                    <a href = "https://traders.expert/events/">Events</a>
+                    <a href = "https://traders.expert/others-products/">Other Products</a>
+                    <a href = "https://traders.expert/news/">News</a>
+                    <a href = "https://traders.expert/contact-us/">Contact Us</a>
+                </div>
+                <div class = "footer-policies">
+                    <h3>Policies</h3>
+                    <a href = "https://traders.expert/privacy-policy/">Privacy Policy</a>
+                    <a href = "https://traders.expert/risk-warning/">Risk Warning</a>
+                    <a href = "https://traders.expert/terms-conditions/">Terms & Conditions</a>
+                    <a href = "https://traders.expert/spam-disclaimer/">Spam Disclaimer</a>
+                </div>
+                <div class = "newsletter">
+                    <h3>Newsletter</h3>
+                    <form>
+                        <input type = "text" placeholder="Fullname *">
+                        <input type = "email" placeholder="Email *">
+                        <input type = "submit" value="Subscribe">
+                    </form>
+                </div>
+            </div>
+            <div class = "footer-bottom">
+                <div class = "rights">
+                    <p>&#169; 2020 Traders Expert. All Rights Reserved</p>
+                </div>
+                <div class = "app-links">
+                    <div class = "app-logo">
+                        <a href = "https://twitter.com/" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    </div>
+                    <div class = "app-logo">
+                        <a href = "https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square" aria-hidden="true"></i></a>
+                    </div>
+                    <div class = "app-logo">
+                        <a href = "https://www.instagram.com/" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                    </div>
+                    <div class = "app-logo">
+                        <a href = "https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
