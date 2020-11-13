@@ -58,9 +58,8 @@ header {
     width: 495px;
     flex-direction: column;
     align-items: flex-start;
-    position: absolute;
-    right: 0;
-    top: 0;
+    align-self: flex-start;
+    position: relative;
     background-color: #3D445C;
     z-index: 1;
     .menu-container-header {
@@ -141,7 +140,6 @@ header {
         }
 
         details[open] {
-            max-height: auto;
             summary {
                 div {
                     i {
@@ -1706,20 +1704,14 @@ footer {
         right: -80px;
     }
 
-    .menu-container {
-        right: -90px;
-    }
+    // .menu-container {
+    //     right: -90px;
+    // }
 
     footer {
         .container {
             width: 800px;
         }
-    }
-}
-
-@media ( max-device-width: 820px ) {
-    .menu-container {
-        right: -120px;
     }
 }
 
@@ -1732,9 +1724,9 @@ footer {
         right: -190px;
     }
 
-    .menu-container {
-        right: -215px;
-    }
+    // .menu-container {
+    //     right: -215px;
+    // }
 
     footer {
         .container {
@@ -1752,9 +1744,9 @@ footer {
         right: -250px;
     }
 
-    .menu-container {
-        right: -285px;
-    }
+    // .menu-container {
+    //     right: -285px;
+    // }
 
     footer {
         .container {
@@ -1772,9 +1764,9 @@ footer {
         right: -270px;
     }
 
-    .menu-container {
-        right: -285px;
-    }
+    // .menu-container {
+    //     right: -285px;
+    // }
 
     footer {
         .container {
@@ -1788,9 +1780,9 @@ footer {
         right: -300px;
     }
 
-    .menu-container {
-        right: -325px;
-    }
+    // .menu-container {
+    //     right: -325px;
+    // }
 
     footer {
         .container {
@@ -1809,7 +1801,26 @@ footer {
     }
 
     .menu-container {
-        right: -175px;
+        right: 65px;
+        width: 630px;
+        .menu-links {
+            a {
+                p {
+                    font-size: 30px;
+                }
+            }
+
+            details {
+                summary {
+                    font-size: 30px;
+                }
+
+                a {
+                    font-size: 30px;
+                    line-height: 60px;;
+                }
+            }
+        }
     }
     header {
         .container {
@@ -2101,14 +2112,31 @@ footer {
 
 }
 
+@media ( max-device-width: 414px ) {
+    // .menu-container {
+    //     right: -220px;
+    // }
+}
+
+@media ( max-device-width: 375px ) {
+    .menu-icon {
+        right: -200px;
+    }
+
+    // .menu-container {
+    //     right: -260px;
+    // }
+}
+
+
 @media ( max-width: 320px ) {
     .menu-icon {
         right: -250px;
     }
 
-    .menu-container {
-        right: -315px;
-    } 
+    // .menu-container {
+    //     right: -315px;
+    // } 
 
     .intro {
         .container {

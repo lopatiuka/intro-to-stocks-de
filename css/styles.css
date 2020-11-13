@@ -47,9 +47,8 @@ header .fa {
   width: 495px;
   flex-direction: column;
   align-items: flex-start;
-  position: absolute;
-  right: 0;
-  top: 0;
+  align-self: flex-start;
+  position: relative;
   background-color: #3D445C;
   z-index: 1;
 }
@@ -121,9 +120,6 @@ header .fa {
 .menu-container .menu-links details a:last-child {
   line-height: 26px;
   margin-bottom: 10px;
-}
-.menu-container .menu-links details[open] {
-  max-height: auto;
 }
 .menu-container .menu-links details[open] summary div i {
   transform: rotate(-135deg);
@@ -1405,17 +1401,8 @@ footer .container .footer-bottom .app-links .app-logo:hover i {
     right: -80px;
   }
 
-  .menu-container {
-    right: -90px;
-  }
-
   footer .container {
     width: 800px;
-  }
-}
-@media (max-device-width: 820px) {
-  .menu-container {
-    right: -120px;
   }
 }
 @media (max-device-width: 760px) {
@@ -1425,10 +1412,6 @@ footer .container .footer-bottom .app-links .app-logo:hover i {
 
   .menu-icon {
     right: -190px;
-  }
-
-  .menu-container {
-    right: -215px;
   }
 
   footer .container {
@@ -1444,10 +1427,6 @@ footer .container .footer-bottom .app-links .app-logo:hover i {
     right: -250px;
   }
 
-  .menu-container {
-    right: -285px;
-  }
-
   footer .container {
     width: 800px;
   }
@@ -1461,10 +1440,6 @@ footer .container .footer-bottom .app-links .app-logo:hover i {
     right: -270px;
   }
 
-  .menu-container {
-    right: -285px;
-  }
-
   footer .container {
     width: 800px;
   }
@@ -1472,10 +1447,6 @@ footer .container .footer-bottom .app-links .app-logo:hover i {
 @media (max-width: 540px) {
   .menu-icon {
     right: -300px;
-  }
-
-  .menu-container {
-    right: -325px;
   }
 
   footer .container {
@@ -1492,7 +1463,18 @@ footer .container .footer-bottom .app-links .app-logo:hover i {
   }
 
   .menu-container {
-    right: -175px;
+    right: 65px;
+    width: 630px;
+  }
+  .menu-container .menu-links a p {
+    font-size: 30px;
+  }
+  .menu-container .menu-links details summary {
+    font-size: 30px;
+  }
+  .menu-container .menu-links details a {
+    font-size: 30px;
+    line-height: 60px;
   }
 
   header .container img {
@@ -1700,13 +1682,14 @@ footer .container .footer-bottom .app-links .app-logo:hover i {
     font-size: 30px;
   }
 }
+@media (max-device-width: 375px) {
+  .menu-icon {
+    right: -200px;
+  }
+}
 @media (max-width: 320px) {
   .menu-icon {
     right: -250px;
-  }
-
-  .menu-container {
-    right: -315px;
   }
 
   .intro .container .caption {
