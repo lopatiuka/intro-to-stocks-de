@@ -1817,7 +1817,10 @@ footer {
 
                 a {
                     font-size: 30px;
-                    line-height: 60px;;
+                    line-height: 60px;
+                    &:last-child {
+                        line-height: 40px;
+                    }
                 }
             }
         }

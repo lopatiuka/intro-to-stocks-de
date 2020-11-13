@@ -1476,6 +1476,9 @@ footer .container .footer-bottom .app-links .app-logo:hover i {
     font-size: 30px;
     line-height: 60px;
   }
+  .menu-container .menu-links details a:last-child {
+    line-height: 40px;
+  }
 
   header .container img {
     width: 180px;
