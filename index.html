@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <head>
     <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width">
     <title>Traders expert</title>
     <link  rel = "stylesheet" type = "text/css" href = "css/styles.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -79,11 +80,11 @@
                 </h1>
             <div class = "content">
                 <div class = "video-container">
-                    <p>Video serie CHAPTER #1</br>
+                    <p class = "video-hader">Video serie CHAPTER #1</br>
                         <span class = "yellow-text">Intro to Stocks</span></p>
                     <div class = "video">
                         <div class = "image">
-                            <a data-fancybox href="https://www.youtube.com/watch?v=ifp5L0mB0Aw"  class = "round-button"><p>&#9658</p></a>
+                            <a data-fancybox href="https://www.youtube.com/watch?v=ifp5L0mB0Aw"  class = "round-button"><p class="play">&#9658</p></a>
                         </div>
                     </div>
                 </div>
@@ -93,7 +94,7 @@
                             <p>by simply joining our community and opening an account with our recommended broker.</p>
                     </div>
                     <form>
-                        <input type = "text" name = "email" placeholder="Email">
+                        <input type = "email" name = "email" placeholder="Email">
                         <input type = "text" name = "name" placeholder="Name">
                         <div class = "checkboxes">
                             <label>
@@ -179,7 +180,11 @@
                         </li>
                         <li>
                             <div class = "content">
-                                <img src="images/Thumbnail Ebook.png" style = "margin-top: 0">
+                                <img src="images/Thumbnail Ebook.png">
+                                <img class = "adaptive" src = "images/Thumbnail Ebook adaptive.png">
+                                <img class = "adaptive-986" src = "images/Thumbnail Ebook 986.png">
+                                <img class = "adaptive-480" src = "images/Thumbnail Ebook 480.png">
+                                <img class = "adaptive-320" src = "images/Thumbnail Ebook 320.png">
                             </div>
                             <h3 class = "chapter-header">EBOOK</h3>
                             <h3 class = "chapter-subheader">Trading stocks and wealth</h3>
@@ -280,4 +285,16 @@
             </div>
         </div>
     </footer>
+    <script>
+        let showMenu = () => {
+            document.getElementById( "menu" ).classList.remove("hidden");
+        }
+
+        let hideMenu = () => {
+            document.getElementById( "menu" ).classList.add("hidden");
+        }
+
+        document.getElementById( "show-menu" ).addEventListener( "click", showMenu );
+        document.getElementById( "hide-menu" ).addEventListener( "click", hideMenu );
+    </script>
 </body>

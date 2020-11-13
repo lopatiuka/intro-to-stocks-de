@@ -14,6 +14,7 @@ body, section {
   padding: 0;
   margin: 0;
   font-family: Cerebri Sans Pro;
+  overflow-x: hidden;
 }
 
 header .container {
@@ -396,7 +397,6 @@ header .container .navigation a:hover p {
 .intro .container {
   display: flex;
   flex-direction: column;
-  height: 810px;
   justify-content: flex-start;
   align-items: center;
   background-color: #3f455dc4;
@@ -415,13 +415,14 @@ header .container .navigation a:hover p {
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  flex-wrap: wrap;
   width: 100%;
 }
 .intro .container .content .form {
   width: 370px;
   height: 547px;
   background-color: white;
-  margin-left: 40px;
+  margin: 40px;
   border-radius: 10px;
   background-color: #3e445c;
   display: flex;
@@ -453,7 +454,7 @@ header .container .navigation a:hover p {
   justify-content: flex-start;
   align-items: center;
 }
-.intro .container .content .form form input[type=text], .intro .container .content .form form input[type=password] {
+.intro .container .content .form form input[type=text], .intro .container .content .form form input[type=email] {
   width: 280px;
   height: 49px;
   margin: 5px;
@@ -595,6 +596,7 @@ header .container .navigation a:hover p {
 .about .about-caption h1 {
   font-size: 30px;
   font-family: Cerebri Sans Pro;
+  text-align: center;
   color: #3F455D;
 }
 .about .about-caption h3 {
@@ -604,13 +606,14 @@ header .container .navigation a:hover p {
   line-height: 30px;
   color: #3F455D;
   margin-top: 0;
+  text-align: center;
 }
 .about .about-caption p {
   text-align: center;
   font-size: 16px;
   font-family: Cerebri Sans Pro;
   color: #757575;
-  font-weight: 200;
+  font-weight: bold;
   margin-top: -10px;
 }
 .about .about-top {
@@ -657,8 +660,10 @@ header .container .navigation a:hover p {
 }
 .about .chapters ul {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
   margin-top: 0;
+  padding: 0;
 }
 .about .chapters ul li {
   display: flex;
@@ -669,11 +674,11 @@ header .container .navigation a:hover p {
   height: 561px;
   border-radius: 10px;
   background-color: rgba(178, 190, 207, 0.24);
-  margin-right: 30px;
+  margin: 15px;
   box-shadow: 1px 1px 5px 1px #e0e0e0;
 }
 .about .chapters ul li .content {
-  width: 270px;
+  width: 100%;
   height: 270px;
   display: flex;
   justify-content: center;
@@ -706,10 +711,10 @@ header .container .navigation a:hover p {
   font-size: 25px;
 }
 .about .chapters ul li .content img {
-  width: 270px;
-  height: 270px;
   border-radius: 10px;
-  margin-top: -40px;
+}
+.about .chapters ul li .content img.adaptive, .about .chapters ul li .content img.adaptive-986, .about .chapters ul li .content img.adaptive-480, .about .chapters ul li .content img.adaptive-320 {
+  display: none;
 }
 .about .chapters ul li .chapter-header {
   font-weight: bold;
@@ -732,6 +737,7 @@ header .container .navigation a:hover p {
   font-size: 15px;
   line-height: 179%;
   color: #696969;
+  width: 239px;
 }
 .about .chapters ul li .description span {
   font-weight: 600;
@@ -796,6 +802,7 @@ header .container .navigation a:hover p {
   justify-content: flex-start;
   align-items: center;
   background-color: rgba(178, 190, 207, 0.24);
+  overflow-y: hidden;
 }
 .partners .partners-caption h1 {
   font-size: 30px;
@@ -809,6 +816,7 @@ header .container .navigation a:hover p {
   display: flex;
   justify-content: space-between;
   height: 289px;
+  padding: 0;
 }
 .partners .partners-list li {
   display: flex;
@@ -1076,6 +1084,762 @@ footer .container .footer-bottom .app-links .app-logo:hover {
 }
 footer .container .footer-bottom .app-links .app-logo:hover i {
   color: white;
+}
+
+@media (max-width: 1332px) {
+  footer .container .footer-top div {
+    margin-right: 10px;
+  }
+}
+@media (max-width: 1170px) {
+  header .container .navigation {
+    display: none;
+  }
+
+  header .fa {
+    display: inline-block;
+  }
+
+  .intro .container .caption {
+    width: 981px;
+  }
+  .intro .container .content .video-container .video {
+    width: 981px;
+    height: 466px;
+  }
+  .intro .container .content .form {
+    width: 648px;
+    height: auto;
+  }
+  .intro .container .content .form .form-caption {
+    width: 540px;
+  }
+  .intro .container .content .form form input[type=text], .intro .container .content .form form input[type=email] {
+    width: 524px;
+  }
+  .intro .container .content .form form input[type=submit] {
+    width: 320px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+  .intro .container .content .form form .checkboxes {
+    width: 524px;
+  }
+  .intro .container .content .form form .checkboxes label span {
+    width: 507px;
+  }
+
+  .about .about-top .description {
+    width: 720px;
+  }
+  .about .chapters .caption {
+    width: 814px;
+  }
+  .about .chapters ul li {
+    width: 478px;
+    height: 464px;
+  }
+  .about .chapters ul li .content {
+    height: 252px;
+  }
+  .about .chapters ul li .content img:first-child {
+    display: none;
+  }
+  .about .chapters ul li .content img.adaptive {
+    display: block;
+    width: 100%;
+    height: 252px;
+  }
+  .about .chapters ul li .chapter-subheader {
+    margin-bottom: 0;
+  }
+  .about .chapters ul li .description {
+    width: 412px;
+  }
+  .about .chapters ul li:nth-child(1) .content {
+    background-image: url("../images/Thumbnail Chapter 1 adaptive.png");
+  }
+  .about .chapters ul li:nth-child(2) .content {
+    background-image: url("../images/Thumbnail Chapter 2 adaptive.png");
+  }
+  .about .chapters ul li:nth-child(3) .content {
+    background-image: url("../images/Thumbnail Chapter 3 adaptive.png");
+  }
+
+  .partners .partners-container .partners-list li {
+    width: 309px;
+    height: 136.75px;
+  }
+  .partners .partners-container .partners-list li:nth-child(1) a img {
+    width: 250.54px;
+    height: 73.7px;
+  }
+  .partners .partners-container .partners-list li:nth-child(2) a img {
+    width: 249.73px;
+    height: 59.78px;
+  }
+  .partners .partners-container .partners-list li:nth-child(3) a img {
+    width: 213.94px;
+    height: 77.79px;
+  }
+
+  footer .container h3 {
+    font-size: 18px;
+  }
+  footer .container .footer-top div {
+    margin-right: 10px;
+  }
+  footer .container .footer-top .footer-links, footer .container .footer-top .footer-policies {
+    margin-right: 10px;
+  }
+  footer .container .footer-top .adress p {
+    font-size: 14px;
+  }
+  footer .container .footer-top .footer-links a {
+    font-size: 14px;
+  }
+  footer .container .footer-top .footer-policies a {
+    font-size: 14px;
+  }
+  footer .container .footer-top .newsletter form input {
+    width: 250px;
+    height: 60px;
+  }
+  footer .container .footer-top .newsletter form input:focus {
+    outline: none;
+  }
+  footer .container .footer-top .newsletter form input[type=submit] {
+    width: 120px;
+    height: 60px;
+  }
+  footer .container .footer-bottom .rights p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 986px) {
+  header .container img {
+    width: 200px;
+    height: 65px;
+  }
+  header .container .navigation a {
+    font-size: 14px;
+    margin: 0 5px 0 5px;
+  }
+
+  .intro .container .caption {
+    width: 761px;
+  }
+  .intro .container .content .video-container .video {
+    width: 758.04px;
+    height: 466px;
+  }
+  .intro .container .content .form {
+    width: 492px;
+    height: auto;
+  }
+  .intro .container .content .form .form-caption {
+    width: 434px;
+  }
+  .intro .container .content .form form input[type=text], .intro .container .content .form form input[type=email] {
+    width: 412px;
+  }
+  .intro .container .content .form form .checkboxes {
+    width: 452px;
+  }
+  .intro .container .content .form form .checkboxes label span {
+    width: 435px;
+  }
+
+  .about .about-top .description {
+    width: 564px;
+  }
+  .about .chapters .caption {
+    width: 759px;
+  }
+  .about .chapters ul li {
+    width: 364px;
+    height: 481px;
+  }
+  .about .chapters ul li .content {
+    height: 252px;
+  }
+  .about .chapters ul li .content img:first-child {
+    display: none;
+  }
+  .about .chapters ul li .content img.adaptive {
+    display: none;
+  }
+  .about .chapters ul li .content img.adaptive-986 {
+    display: block;
+    width: 100%;
+    height: 252px;
+  }
+  .about .chapters ul li .description {
+    width: 317px;
+  }
+  .about .chapters ul li:nth-child(1) .content {
+    background-image: url("../images/Thumbnail Chapter 1 986.png");
+  }
+  .about .chapters ul li:nth-child(2) .content {
+    background-image: url("../images/Thumbnail Chapter 2 986.png");
+  }
+  .about .chapters ul li:nth-child(3) .content {
+    background-image: url("../images/Thumbnail Chapter 3 986.png");
+  }
+
+  .partners .partners-container .partners-list li {
+    width: 233px;
+    height: 137px;
+  }
+  .partners .partners-container .partners-list li:nth-child(1) a img {
+    width: 201px;
+  }
+  .partners .partners-container .partners-list li:nth-child(2) a img {
+    width: 218px;
+  }
+  .partners .partners-container .partners-list li:nth-child(3) a img {
+    width: 210px;
+  }
+
+  footer .container {
+    width: 100%;
+  }
+  footer .container h3 {
+    font-size: 18px;
+  }
+  footer .container .footer-top div {
+    margin-right: 10px;
+  }
+  footer .container .footer-top .adress .full-adress {
+    width: 220px;
+  }
+  footer .container .footer-top .adress p {
+    font-size: 14px;
+  }
+  footer .container .footer-top .footer-links a {
+    font-size: 14px;
+  }
+  footer .container .footer-top .footer-policies a {
+    font-size: 14px;
+  }
+  footer .container .footer-top .newsletter form input {
+    width: 250px;
+    height: 60px;
+  }
+  footer .container .footer-top .newsletter form input[type=submit] {
+    width: 120px;
+    height: 60px;
+  }
+}
+@media (max-width: 768px) {
+  header .container img {
+    width: 180px;
+    height: 55px;
+  }
+  header .container .navigation a {
+    font-size: 12px;
+    margin: 0 5px 0 5px;
+  }
+
+  footer .container {
+    width: 100%;
+    margin-left: 30px;
+  }
+  footer .container .footer-top {
+    flex-direction: column;
+  }
+  footer .container .footer-top div {
+    margin-bottom: 100px;
+  }
+  footer .container .footer-top .adress {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+  }
+  footer .container .footer-top .adress img {
+    width: 229px;
+  }
+  footer .container .footer-top .adress p {
+    font-size: 15px;
+  }
+  footer .container .footer-top .footer-links h3 {
+    font-size: 20px;
+  }
+  footer .container .footer-top .footer-links a {
+    font-size: 15px;
+  }
+  footer .container .footer-top .footer-policies h3 {
+    font-size: 20px;
+  }
+  footer .container .footer-top .footer-policies a {
+    font-size: 15px;
+  }
+  footer .container .footer-top .newsletter {
+    display: flex;
+    flex-direction: column;
+  }
+  footer .container .footer-top .newsletter h3 {
+    font-size: 20px;
+  }
+  footer .container .footer-top .newsletter form input {
+    width: 250px;
+  }
+  footer .container .footer-bottom {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    margin-top: 0;
+  }
+  footer .container .footer-bottom .rights {
+    margin-top: 50px;
+  }
+  footer .container .footer-bottom .rights p {
+    font-size: 30px;
+  }
+}
+@media (max-device-width: 870px) {
+  body {
+    width: 950px;
+  }
+
+  .menu-icon {
+    right: -80px;
+  }
+
+  .menu-container {
+    right: -90px;
+  }
+
+  footer .container {
+    width: 800px;
+  }
+}
+@media (max-device-width: 820px) {
+  .menu-container {
+    right: -120px;
+  }
+}
+@media (max-device-width: 760px) {
+  body {
+    width: 950px;
+  }
+
+  .menu-icon {
+    right: -190px;
+  }
+
+  .menu-container {
+    right: -215px;
+  }
+
+  footer .container {
+    width: 800px;
+  }
+}
+@media (max-device-width: 660px) {
+  body {
+    width: 950px;
+  }
+
+  .menu-icon {
+    right: -250px;
+  }
+
+  .menu-container {
+    right: -285px;
+  }
+
+  footer .container {
+    width: 800px;
+  }
+}
+@media (max-device-width: 600px) {
+  body {
+    width: 870px;
+  }
+
+  .menu-icon {
+    right: -270px;
+  }
+
+  .menu-container {
+    right: -285px;
+  }
+
+  footer .container {
+    width: 800px;
+  }
+}
+@media (max-width: 540px) {
+  .menu-icon {
+    right: -300px;
+  }
+
+  .menu-container {
+    right: -325px;
+  }
+
+  footer .container {
+    width: 800px;
+  }
+}
+@media (max-device-width: 480px) {
+  body {
+    width: 630px;
+  }
+
+  .menu-icon {
+    right: -130px;
+  }
+
+  .menu-container {
+    right: -175px;
+  }
+
+  header .container img {
+    width: 180px;
+    height: 55px;
+  }
+  header .container .navigation a {
+    font-size: 12px;
+    margin: 0 5px 0 5px;
+  }
+
+  .intro .container .caption {
+    width: 600px;
+    font-size: 60px;
+  }
+  .intro .container .content .video-container p {
+    font-size: 30px;
+  }
+  .intro .container .content .video-container .video {
+    width: 574px;
+    height: 380px;
+  }
+  .intro .container .content .form {
+    width: 574px;
+    height: auto;
+    margin: 20px 0 100px 0;
+  }
+  .intro .container .content .form .form-caption {
+    width: 500px;
+  }
+  .intro .container .content .form .form-caption h3 {
+    font-size: 20px;
+  }
+  .intro .container .content .form .form-caption p {
+    font-size: 20px;
+  }
+  .intro .container .content .form form input[type=text], .intro .container .content .form form input[type=email] {
+    width: 497px;
+    height: 75px;
+    font-size: 25px;
+    margin: 10px;
+  }
+  .intro .container .content .form form input[type=submit] {
+    width: 427px;
+    height: 75px;
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+  .intro .container .content .form form .checkboxes {
+    width: 497px;
+  }
+  .intro .container .content .form form .checkboxes label input[type=checkbox] {
+    width: 25px;
+    height: 25px;
+  }
+  .intro .container .content .form form .checkboxes label span {
+    width: 507px;
+    font-size: 25px;
+  }
+
+  .about .about-caption h1 {
+    font-size: 45px;
+  }
+  .about .about-caption h3 {
+    font-size: 35px;
+  }
+  .about .about-caption p {
+    font-size: 20px;
+  }
+  .about .about-top .top-row {
+    display: block;
+    padding: 0 30px 0 30px;
+  }
+  .about .about-top .top-row img {
+    float: left;
+    width: 250px;
+    height: 250px;
+  }
+  .about .about-top .top-row .description {
+    width: auto;
+    height: auto;
+    font-size: 20px;
+  }
+  .about .about-top .bottom-line {
+    width: 400px;
+  }
+  .about .chapters .caption {
+    width: auto;
+    font-size: 25px;
+  }
+  .about .chapters ul li {
+    width: 285px;
+    height: auto;
+  }
+  .about .chapters ul li .content {
+    height: 358px;
+  }
+  .about .chapters ul li .content img.adaptive-986 {
+    display: none;
+  }
+  .about .chapters ul li .content img.adaptive-480 {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .about .chapters ul li .description {
+    width: 270px;
+    font-size: 20px;
+  }
+  .about .chapters ul li:nth-child(1) .content {
+    background-image: url("../images/Thumbnail Chapter 1 480.png");
+  }
+  .about .chapters ul li:nth-child(2) .content {
+    background-image: url("../images/Thumbnail Chapter 2 480.png");
+  }
+  .about .chapters ul li:nth-child(3) .content {
+    background-image: url("../images/Thumbnail Chapter 3 480.png");
+  }
+
+  .partners .partners-caption h1 {
+    font-size: 45px;
+  }
+  .partners .partners-container .partners-list {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .partners .partners-container .partners-list li {
+    width: 212px;
+    height: 106px;
+  }
+  .partners .partners-container .partners-list li:nth-child(1) a img {
+    width: 182.88px;
+    height: initial;
+  }
+  .partners .partners-container .partners-list li:nth-child(2) a img {
+    width: 198.44px;
+    height: initial;
+  }
+  .partners .partners-container .partners-list li:nth-child(3) a img {
+    width: 210px;
+    height: initial;
+  }
+
+  footer .container {
+    width: 600px;
+  }
+  footer .container .footer-top {
+    flex-direction: column;
+  }
+  footer .container .footer-top div {
+    margin-bottom: 100px;
+  }
+  footer .container .footer-top .footer-policies, footer .container .footer-top .footer-links {
+    width: initial;
+  }
+  footer .container .footer-top .adress {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  footer .container .footer-top .adress .full-adress {
+    width: 329px;
+  }
+  footer .container .footer-top .adress img {
+    width: 329px;
+  }
+  footer .container .footer-top .adress p {
+    font-size: 30px;
+  }
+  footer .container .footer-top .adress a {
+    font-size: 30px;
+  }
+  footer .container .footer-top .footer-links h3 {
+    font-size: 40px;
+  }
+  footer .container .footer-top .footer-links a {
+    font-size: 30px;
+  }
+  footer .container .footer-top .footer-policies h3 {
+    font-size: 40px;
+  }
+  footer .container .footer-top .footer-policies a {
+    font-size: 30px;
+  }
+  footer .container .footer-top .newsletter {
+    display: flex;
+    flex-direction: column;
+  }
+  footer .container .footer-top .newsletter h3 {
+    font-size: 40px;
+  }
+  footer .container .footer-top .newsletter form input {
+    width: 480px;
+  }
+  footer .container .footer-bottom {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    margin-top: 0;
+  }
+  footer .container .footer-bottom .rights {
+    margin-top: 50px;
+  }
+  footer .container .footer-bottom .rights p {
+    font-size: 30px;
+  }
+}
+@media (max-width: 320px) {
+  .menu-icon {
+    right: -250px;
+  }
+
+  .menu-container {
+    right: -315px;
+  }
+
+  .intro .container .caption {
+    font-size: 70px;
+  }
+  .intro .container .content .video-container .video {
+    font-size: 30px;
+  }
+  .intro .container .content .video-container .video .round-button {
+    width: 125px;
+    height: 125px;
+  }
+  .intro .container .content .video-container .video .round-button .play {
+    margin-left: 10px;
+    font-size: 50px;
+  }
+  .intro .container .content .video-container .video-header {
+    font-size: 50px;
+    line-height: 60px;
+    width: 400px;
+  }
+  .intro .container .content .form .form-caption h3 {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+  .intro .container .content .form .form-caption p {
+    font-size: 30px;
+    line-height: 45px;
+  }
+  .intro .container .content .form form input[type=text], .intro .container .content .form form input[type=email] {
+    height: 100px;
+  }
+  .intro .container .content .form form input[type=submit] {
+    width: 537px;
+    height: 100px;
+  }
+  .intro .container .content .form form .checkboxes label input {
+    margin-top: 15px;
+  }
+  .intro .container .content .form form .checkboxes label span {
+    font-size: 30px;
+    line-height: 50px;
+  }
+
+  .about .about-caption p {
+    font-size: 30px;
+  }
+  .about .about-top .top-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .about .about-top .top-row img {
+    width: 350px;
+    height: 350px;
+  }
+  .about .about-top .top-row .description {
+    font-size: 30px;
+  }
+  .about .chapters .caption {
+    width: auto;
+    font-size: 30px;
+  }
+  .about .chapters ul li {
+    width: 600px;
+  }
+  .about .chapters ul li .content {
+    height: 500px;
+  }
+  .about .chapters ul li .content .round-button {
+    width: 150px;
+    height: 150px;
+  }
+  .about .chapters ul li .content .round-button i {
+    font-size: 30px;
+  }
+  .about .chapters ul li .content img.adaptive-480 {
+    display: none;
+  }
+  .about .chapters ul li .content img.adaptive-320 {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .about .chapters ul li .chapter-header {
+    font-size: 45px;
+    margin-bottom: 20px;
+  }
+  .about .chapters ul li .chapter-subheader {
+    font-size: 40px;
+  }
+  .about .chapters ul li .description {
+    width: 550px;
+    font-size: 30px;
+  }
+  .about .chapters ul li:nth-child(1) .content {
+    background-image: url("../images/Thumbnail Chapter 1 320.png");
+  }
+  .about .chapters ul li:nth-child(2) .content {
+    background-image: url("../images/Thumbnail Chapter 2 320.png");
+  }
+  .about .chapters ul li:nth-child(3) .content {
+    background-image: url("../images/Thumbnail Chapter 3 320.png");
+  }
+  .about a {
+    width: 600px;
+    height: 100px;
+    font-size: 30px;
+  }
+
+  .partners {
+    height: auto;
+  }
+  .partners .partners-container .partners-list {
+    height: auto;
+  }
+  .partners .partners-container .partners-list li {
+    width: 550px;
+    height: 250px;
+    margin: 10px 0 10px 0;
+  }
+  .partners .partners-container .partners-list li:nth-child(1) a img {
+    width: 550px;
+    height: 100px;
+  }
+  .partners .partners-container .partners-list li:nth-child(2) a img {
+    width: 548px;
+    height: 75px;
+  }
+  .partners .partners-container .partners-list li:nth-child(3) a img {
+    width: 584px;
+    height: 110px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
