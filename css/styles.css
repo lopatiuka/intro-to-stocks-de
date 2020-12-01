@@ -815,13 +815,13 @@ header .container .navigation a:hover p {
   font-weight: 600;
 }
 .about .chapters ul li:nth-child(1) .content {
-  background-image: url("../images/thumbnail chapter 1.png");
+  background-image: url("../images/Thumbnail Chapter 1.png");
 }
 .about .chapters ul li:nth-child(2) .content {
-  background-image: url("../images/thumbnail chapter 2.png");
+  background-image: url("../images/Thumbnail Chapter 2.png");
 }
 .about .chapters ul li:nth-child(3) .content {
-  background-image: url("../images/thumbnail chapter 3.png");
+  background-image: url("../images/Thumbnail Chapter 3.png");
 }
 .about a {
   display: flex;
