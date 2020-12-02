@@ -1457,7 +1457,7 @@ footer .bottom-links-container .bottom-links .rights a {
   .about .about-top .top-row .adaptive-about-top .about-caption-768 {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
   }
   .about .about-top .top-row .adaptive-about-top .about-caption-768 h1 {
     font-weight: normal;
@@ -1710,6 +1710,9 @@ footer .bottom-links-container .bottom-links .rights a {
   }
   .about .about-top .top-row .adaptive-about-top {
     flex-direction: column-reverse;
+    align-items: center;
+  }
+  .about .about-top .top-row .adaptive-about-top .about-caption-768 {
     align-items: center;
   }
   .about .about-top .top-row .adaptive-about-top .about-caption-768 h1 {
