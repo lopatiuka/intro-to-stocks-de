@@ -665,8 +665,7 @@ header {
                         border-radius: 5px;
                     }
                     iframe{
-                        width: 100%;
-                        height: 100%;
+                        border-radius: 33px;
                     }
                     .round-button{
                         display: flex;
@@ -1922,9 +1921,9 @@ footer {
 }
 
 
-@media ( max-device-width: 800px ) {
+@media ( max-device-width: 815px ) {
     .menu-container {
-        right: -27px;
+        right: -29px;
     }
 }
 
@@ -1978,7 +1977,7 @@ footer {
     }
 
     .menu-container {
-        right: 0;
+        right: 12px;
     }
 
     footer {
