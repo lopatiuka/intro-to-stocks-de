@@ -902,7 +902,7 @@ header {
                 &:nth-child(4) { 
                     .content {
                         background-image: url("../images/ebook.png");
-                        background-position: top;
+                        background-position: 0 15%;
                         background-size: 100%;
                     }
                 }
@@ -1808,12 +1808,6 @@ footer {
                     }
                     .description {
                         width: 225px;
-                    }
-
-                    &:nth-child(4){
-                        .content {
-                            background-position: 0 10%;
-                        }
                     }
                 }
             }

@@ -821,7 +821,7 @@ header .container .navigation a:hover p {
 }
 .about .chapters ul li:nth-child(4) .content {
   background-image: url("../images/ebook.png");
-  background-position: top;
+  background-position: 0 15%;
   background-size: 100%;
 }
 .about a {
@@ -1489,9 +1489,6 @@ footer .bottom-links-container .bottom-links .rights a {
   }
   .about .chapters ul li .description {
     width: 225px;
-  }
-  .about .chapters ul li:nth-child(4) .content {
-    background-position: 0 10%;
   }
 
   .partners .partners-container .partners-list li {
