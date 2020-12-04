@@ -784,9 +784,6 @@ header .container .navigation a:hover p {
 .about .chapters ul li .content .round-button:hover i {
   font-size: 35px;
 }
-.about .chapters ul li .content img.adaptive, .about .chapters ul li .content img.adaptive-986, .about .chapters ul li .content img.adaptive-480, .about .chapters ul li .content img.adaptive-320 {
-  display: none;
-}
 .about .chapters ul li .chapter-header {
   font-weight: bold;
   font-size: 19px;
@@ -821,6 +818,11 @@ header .container .navigation a:hover p {
 }
 .about .chapters ul li:nth-child(3) .content {
   background-image: url("../images/Thumbnail Chapter 3.png");
+}
+.about .chapters ul li:nth-child(4) .content {
+  background-image: url("../images/ebook.png");
+  background-position: top;
+  background-size: 100%;
 }
 .about a {
   display: flex;
@@ -1488,6 +1490,9 @@ footer .bottom-links-container .bottom-links .rights a {
   .about .chapters ul li .description {
     width: 225px;
   }
+  .about .chapters ul li:nth-child(4) .content {
+    background-position: 0 10%;
+  }
 
   .partners .partners-container .partners-list li {
     width: 210px;
@@ -1746,6 +1751,7 @@ footer .bottom-links-container .bottom-links .rights a {
   }
   .about .chapters ul li .content {
     height: 358px;
+    border-radius: 60px 60px 0 0;
   }
   .about .chapters ul li .chapter-header {
     font-size: 35px;
@@ -1992,6 +1998,7 @@ footer .bottom-links-container .bottom-links .rights a {
   }
   .about .chapters ul li .content {
     height: 360px;
+    border-radius: 70px 70px 0 0;
   }
   .about .chapters ul li .content .round-button {
     width: 150px;

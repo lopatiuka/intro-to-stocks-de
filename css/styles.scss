@@ -850,10 +850,6 @@ header {
                             }
                         }
                     }
-
-                    img.adaptive, img.adaptive-986, img.adaptive-480, img.adaptive-320 {
-                        display: none;
-                    }
                 }
 
                 .chapter-header {
@@ -900,6 +896,14 @@ header {
                 &:nth-child(3) { 
                     .content {
                         background-image: url("../images/Thumbnail\ Chapter\ 3.png");
+                    }
+                }
+
+                &:nth-child(4) { 
+                    .content {
+                        background-image: url("../images/ebook.png");
+                        background-position: top;
+                        background-size: 100%;
                     }
                 }
                 
@@ -1805,6 +1809,12 @@ footer {
                     .description {
                         width: 225px;
                     }
+
+                    &:nth-child(4){
+                        .content {
+                            background-position: 0 10%;
+                        }
+                    }
                 }
             }
         }
@@ -1893,11 +1903,6 @@ footer {
         }
     }
 }
-
-
-// @media ( max-device-width: 1224px ) {
-    
-// }
 
 @media ( max-device-width: 870px ) {
     body{
@@ -2191,6 +2196,7 @@ footer {
                     border-radius: 60px;
                     .content {
                         height: 358px;
+                        border-radius: 60px 60px 0 0;
                     }   
 
                     .chapter-header {
@@ -2540,6 +2546,7 @@ footer {
                     border-radius: 70px;
                     .content {
                         height: 360px;
+                        border-radius: 70px 70px 0 0;
                         .round-button {
                             width: 150px;
                             height: 150px;
