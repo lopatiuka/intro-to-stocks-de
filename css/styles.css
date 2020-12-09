@@ -806,19 +806,19 @@ header .container .navigation a:hover p {
   font-size: 15px;
   line-height: 179%;
   color: #151E62;
-  width: 239px;
+  width: 330px;
 }
 .about .chapters ul li .description span {
   font-weight: 600;
 }
 .about .chapters ul li:nth-child(1) .content {
-  background-image: url("../images/Thumbnail Chapter 1.png");
+  background-image: url("../images/DE_Intro-to-stocks.png");
 }
 .about .chapters ul li:nth-child(2) .content {
-  background-image: url("../images/Thumbnail Chapter 2.png");
+  background-image: url("../images/DE_How-to-choose-your-stocks.png");
 }
 .about .chapters ul li:nth-child(3) .content {
-  background-image: url("../images/Thumbnail Chapter 3.png");
+  background-image: url("../images/DE_How-to-trade-stocks.png");
 }
 .about .chapters ul li:nth-child(4) .content {
   background-image: url("../images/ebook.png");
@@ -1357,7 +1357,7 @@ footer .bottom-links-container .bottom-links .rights a {
     width: 759px;
   }
   .about .chapters ul li .description {
-    width: 317px;
+    width: 425px;
   }
 
   .partners .partners-container .partners-list li {
@@ -1486,7 +1486,7 @@ footer .bottom-links-container .bottom-links .rights a {
     height: 185px;
   }
   .about .chapters ul li .description {
-    width: 225px;
+    width: 275px;
   }
 
   .partners .partners-container .partners-list li {
@@ -1755,7 +1755,7 @@ footer .bottom-links-container .bottom-links .rights a {
     font-size: 35px;
   }
   .about .chapters ul li .description {
-    width: 460px;
+    width: 630px;
     font-size: 24px;
   }
   .about a {
@@ -2010,7 +2010,7 @@ footer .bottom-links-container .bottom-links .rights a {
     font-size: 40px;
   }
   .about .chapters ul li .description {
-    width: 550px;
+    width: 625px;
     font-size: 30px;
   }
   .about a {

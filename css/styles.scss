@@ -876,7 +876,7 @@ header {
                     font-size: 15px;
                     line-height: 179%;
                     color: #151E62;
-                    width: 239px;
+                    width: 330px;
                     span{
                         font-weight: 600;
                     }
@@ -884,19 +884,19 @@ header {
 
                 &:nth-child(1){
                     .content {
-                        background-image: url("../images/Thumbnail\ Chapter\ 1.png");
+                        background-image: url("../images/DE_Intro-to-stocks.png");
                     }
                 }
 
                 &:nth-child(2) { 
                     .content {
-                        background-image: url("../images/Thumbnail\ Chapter\ 2.png");
+                        background-image: url("../images/DE_How-to-choose-your-stocks.png");
                     }
                 }
 
                 &:nth-child(3) { 
                     .content {
-                        background-image: url("../images/Thumbnail\ Chapter\ 3.png");
+                        background-image: url("../images/DE_How-to-trade-stocks.png");
                     }
                 }
 
@@ -1609,7 +1609,7 @@ footer {
             ul {
                 li { 
                     .description {
-                        width: 317px;
+                        width: 425px;
                     }
                 }
             }
@@ -1805,7 +1805,7 @@ footer {
                         height: 185px;
                     }
                     .description {
-                        width: 225px;
+                        width: 275px;
                     }
                 }
             }
@@ -2200,7 +2200,7 @@ footer {
                     }
                     
                     .description {
-                        width: 460px;
+                        width: 630px;
                         font-size: 24px;
                     }
                 }
@@ -2558,7 +2558,7 @@ footer {
                     }
                     
                     .description {
-                        width: 550px;
+                        width: 625px;
                         font-size: 30px;
                     }
                 }
