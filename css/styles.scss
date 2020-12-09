@@ -943,6 +943,7 @@ header {
             margin-top: 100px;
             margin-bottom: 50px;
             color: #151E62;
+            text-align: center;
         }
     }
     .partners-list{
@@ -1465,7 +1466,7 @@ footer {
             ul {
                 li {
                     width: 478px;
-                    height: 464px;   
+                    height: auto;   
                     .content {
                         height: 250px;
                         img {
@@ -2209,7 +2210,7 @@ footer {
         a {
             width: 690px;
             height: 100px;
-            font-size: 35px;
+            font-size: 25px;
             border-radius: 50px;
         }
     }
@@ -2568,6 +2569,7 @@ footer {
             width: 600px;
             height: 100px;
             font-size: 30px;
+            text-align: center;
         }
     }
 
@@ -2677,6 +2679,8 @@ footer {
                     a {
                         font-size: 33px;
                         margin: 30px;
+                        line-height: 45px;
+                        text-align: center;
                     }
                 }
 
